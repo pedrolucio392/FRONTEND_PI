@@ -1,0 +1,117 @@
+/*
+-------------------------
+Side bar
+-------------------------
+*/
+
+.sidebar {
+    margin-top: 50px;
+}
+
+.sidebar h2 {
+    font-weight: bold;
+}
+
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 10px;
+}
+
+.form-check-label {
+    font-size: 17px;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.form-subtitle {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.list-group-item{
+    padding: 8px;
+}
+
+.list-group-item a {
+    color: #666666;
+}
+
+.list-group-item a:hover {
+    color: black; /* Substitua com a cor desejada ao passar o mouse */
+    text-decoration: dotted;
+    font-weight: bold;
+}
+
+/*
+-------------------------
+Cards
+-------------------------
+*/
+
+.book-card {
+    margin: 50px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 600px;
+    margin-top: 10px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.form-label {
+    border-radius: 10px;
+}
+
+
+
+/*
+-------------------------
+Sort by
+-------------------------
+*/
+
+
+#sortSelect {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #495057;
+}
+
+/* Estilizando a seta da barra de seleção */
+#sortSelect::after {
+    content: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/svg/solid/chevron-down.svg');
+    margin-left: 5px;
+}
+
+/* Altera a cor da seta ao passar o mouse */
+#sortSelect:hover::after {
+    filter: brightness(0.8);
+}
+
+#sortBy {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#loadMoreButton {
+    background-color: #ffffff;
+    border-color: #242424;
+    font-size: 23px;
+    color: #242424;
+    margin-top: 30px;
+}
+
+#loadMoreButton:hover {
+    background-color: #242424;
+    color: #ffffff;
+    
+}

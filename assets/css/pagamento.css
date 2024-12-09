@@ -1,0 +1,42 @@
+#pagamento {
+    margin-top: 10px;
+    border: 0;
+    margin-left: 40px;
+}
+
+#pagamento .card {
+    border: 0;
+}
+
+#pagamento .card .card-body .card-title {
+    font-size: 30px;
+}
+
+#pagamento .card .card-body .card-text {
+    font-size: 20px;
+}
+
+#pagamento .card .card-body span {
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 300px;
+    font-weight: 500;
+}
+
+#pagamento .card .card-body .subtotal {
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 390px;
+    font-weight: 500;
+}
+
+#pagamento .btn {
+    background-color: #242424;
+    border-color: #242424;
+    width: 500px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+

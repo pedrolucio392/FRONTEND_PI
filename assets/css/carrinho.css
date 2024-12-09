@@ -1,0 +1,119 @@
+
+
+/* Estilo para a seção do carrinho */
+#cart-section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+
+#cart-section h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+/* Estilo para a lista de itens no carrinho */
+#cart-items {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada item no carrinho */
+.list-group-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+/* Estilo para o total do carrinho */
+#cart-total {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Estilo para o botão de checkout */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    border: 1px solid #242424;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: auto; /* Define a margem à direita como "auto" para alinhar à esquerda */
+    margin-left: auto; /* Define a margem à esquerda como "auto" para alinhar à esquerda */
+    text-align: left;
+}
+  
+  /* Estilo para a imagem do livro no card */
+.card-img {
+    width: 100%;
+    height: auto;
+}
+  
+  /* Estilo para o corpo do card */
+.card-body {
+    padding: 10px;
+}
+
+#cart-section .card-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#cart-section .quantidade{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#resumoCompra {
+    margin-top: 10px;
+    border: 0;
+}
+
+#resumoCompra .card {
+    border: 0;
+}
+
+#resumoCompra .card .card-body .card-title {
+    font-size: 30px;
+}
+
+#resumoCompra .card .card-body .card-text {
+    font-size: 20px;
+}
+
+#resumoCompra .card .card-body span {
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 300px;
+    font-weight: 500;
+}
+
+#resumoCompra .card .card-body .subtotal {
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: 390px;
+    font-weight: 500;
+}
+
+#resumoCompra .btn {
+    background-color: #242424;
+    border-color: #242424;
+    width: 500px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+

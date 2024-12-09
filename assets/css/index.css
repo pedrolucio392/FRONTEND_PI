@@ -1,0 +1,444 @@
+/*
+-------------------------
+Navbar
+-------------------------
+*/
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #242424;
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 22px;
+    color: #b16400e0;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-brand {
+    margin-left: 40px;
+}
+
+
+.navbar-brand {
+    font-family: 'Garamond', sans-serif; 
+    font-weight: bold;
+    color: rgba(177, 100, 0, 0.877);
+    font-size: 2rem; 
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.search-icon {
+    margin-left: -40px;
+}
+
+.btn-search {
+    background-color: white;
+    border-color: #ced4da;
+}
+
+#searchInput {
+    width: 500px;
+}
+
+.nav-icons {
+    margin-right: 100px;
+}
+
+.cart-quantity {
+    font-size: 0.8rem;
+    color: rgba(177, 100, 0, 0.877);
+    background-color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-icon {
+    margin-left: 20px;
+}
+
+.navbar-secondary {
+    background-color: rgba(177, 100, 0, 0.877);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow-x: auto;
+}
+
+.navbar-secondary .navbar-nav {
+    display: inline-block; /* Faz com que os itens permaneçam na mesma linha */
+}
+
+.navbar-secondary .nav-link{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar-secondary .navbar-nav .nav-item {
+    display: inline-block;
+    margin-right: 30px; /* Espaço entre os itens */
+    white-space: normal; /* Restaurando o comportamento padrão de quebra de linha */
+}
+
+
+/*
+-------------------------
+Banner
+-------------------------
+*/
+
+.carousel-fade .carousel-item {
+    transition: opacity 2s;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .carousel-item-next.carousel-item-right,
+.carousel-fade .carousel-item-prev.carousel-item-left {
+    opacity: 0;
+}
+
+.carousel-control {
+    display: none;
+}
+
+/* Classe para exibir as setas quando o mouse estiver sobre o banner */
+.show-arrows .carousel-control {
+    display: block;
+}
+
+/* Adaptação para telas pequenas */
+@media (max-width: 768px) {
+.show-arrows .carousel-control {
+    display: none; /* Oculta as setas em telas pequenas */
+    }
+}
+
+
+
+
+
+/*
+-------------------------
+Carousel Cards Promotion
+-------------------------
+*/
+
+.carousel-title {
+    text-align: left;
+    font-size: 30px;
+    color: #242424;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.book-card {
+    margin: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-cards{
+    display: block;
+    padding: 10px;
+    background-color: #242424;
+    border: #242424;
+    margin-top: 20px;
+}
+
+.btn-cards:hover {
+    background-color: #666666;
+}
+
+.btn-view-more {
+    display: block;
+    padding: 10px;
+    background-color: #b16400e0;;
+    border: #242424;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-view-more:hover {
+    background-color: #666666;
+}
+
+#carouselCardsPromotion {
+    margin: 0 200px 100px 200px
+}
+
+#carouselCardsPromotion .carousel-control-prev {
+    margin-left: -170px;
+}
+
+#carouselCardsPromotion .carousel-control-next {
+    margin-right: -170px;
+}
+
+#carouselCardsPromotion .carousel-control-prev-icon {
+    background-image: url('../images/setaEsquerdaCarousel.png'); /* Substitua com o caminho da sua imagem */
+    background-size: contain;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+#carouselCardsPromotion .carousel-control-next-icon {
+    background-image: url('../images/setaDireitaCarousel.png'); /* Substitua com o caminho da sua imagem */
+    background-size: contain;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Adicionando transição de rolagem para o carrossel */
+#carouselCardsPromotion .carousel-fade .carousel-inner {
+    transition: transform 0.5s ease-in-out;
+}
+
+#carouselCardsPromotion .carousel-fade .carousel-inner {
+    display: flex;
+}
+
+#carouselCardsPromotion .carousel-fade .carousel-item {
+    width: 100%;
+    transition: opacity 0.5s;
+}
+
+#carouselCardsPromotion .carousel-fade .carousel-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#carouselCardsPromotion .carousel-fade .carousel-item-next,
+#carouselCardsPromotion .carousel-fade .carousel-item-prev {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+#carouselCardsPromotion .carousel-fade .carousel-item-next.left,
+#carouselCardsPromotion .carousel-fade .carousel-item-prev.right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.promotion-bar {
+    background-color: #9D7B42; /* Cor de fundo da barra de promoção */
+    color: #ffffff; /* Cor do texto na barra de promoção */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px 25px; /* Espaçamento interno da barra de promoção */
+    position: absolute; /* Posicionamento absoluto em relação ao card */
+    top: 0; /* Distância do topo do card */
+    left: 0; /* Distância da esquerda do card */
+}
+
+
+
+
+/*
+-------------------------
+Carousel Cards Best Sellers
+-------------------------
+*/
+
+
+
+.carousel-title .bestSellers{
+    text-align: left;
+    font-size: 30px;
+    color: #242424;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+#carouselCardsBestSellers {
+    margin: 0 200px 100px 200px
+}
+
+#carouselCardsBestSellers .carousel-control-prev {
+    margin-left: -170px;
+}
+
+#carouselCardsBestSellers .carousel-control-next {
+    margin-right: -170px;
+}
+
+#carouselCardsBestSellers .carousel-control-prev-icon {
+    background-image: url('../images/setaEsquerdaCarousel.png'); /* Substitua com o caminho da sua imagem */
+    background-size: contain;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+#carouselCardsBestSellers .carousel-control-next-icon {
+    background-image: url('../images/setaDireitaCarousel.png'); /* Substitua com o caminho da sua imagem */
+    background-size: contain;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+.book-card.hovered {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+
+/* Adicionando transição de rolagem para o carrossel */
+#carouselCardsBestSellers .carousel-fade .carousel-inner {
+    transition: transform 0.5s ease-in-out;
+}
+
+#carouselCardsBestSellers .carousel-fade .carousel-inner {
+    display: flex;
+}
+
+#carouselCardsBestSellers .carousel-fade .carousel-item {
+    width: 100%;
+    transition: opacity 0.5s;
+}
+
+#carouselCardsBestSellers .carousel-fade .carousel-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#carouselCardsBestSellers .carousel-fade .carousel-item-next,
+#carouselCardsBestSellers .carousel-fade .carousel-item-prev {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+#carouselCardsBestSellers .carousel-fade .carousel-item-next.left,
+#carouselCardsBestSellers .carousel-fade .carousel-item-prev.right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/*
+-------------------------
+Newsletter Section
+-------------------------
+*/
+
+
+#newsletter-section {
+    background-color:#242424;
+    border-top: 1px solid #ddd; /* Adiciona uma borda superior */
+    width: 100%;
+    padding-top: 40px;
+}
+  
+#newsletter-section h2 {
+    color: #ffffff; /* Cor do título */
+}
+
+#newsletter-section img {
+    width: 50px;
+}
+
+#newsletter-section form {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+#newsletter-section label, #newsletter-section input, #newsletter-section button {
+    margin-bottom: 20px;
+}
+
+#newsletter-section input {
+    flex: 1;
+    padding: 20px;
+}
+
+#newsletter-section button {
+    color: #242424; /* Cor do texto do botão */
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #9D7B42;
+    border: #242424;
+}
+
+/*
+-------------------------
+Links-footer
+-------------------------
+*/
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    background-color: #242424;
+    padding-top: 50px;
+}
+
+#footer-links .col-md-4 {
+    padding-right: 150px; /* Adapte o padding conforme necessário */
+}
+  
+#footer-links .row {
+    margin-left: -15px; /* Compensa o padding para manter a largura total do container */
+    margin-right: -15px;
+}
+
+#footer-links h4 {
+    color: #ffffff;
+}
+
+#footer-links a {
+    color: #d2d2d2;
+}
+
+
+
+/*
+-------------------------
+Footer
+-------------------------
+*/
+
+.custom-bg-color {
+    background-color: #242424;
+}
