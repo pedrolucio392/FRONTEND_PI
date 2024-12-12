@@ -7,19 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>Livraria St. Atanásio</title>
 
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-  <link rel="stylesheet" href="../assets/css/index.css">
-  <link rel="stylesheet" href="../assets/css/produto.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/produto.css">
 
 </head>
 <body>
 
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="../index.html">Livraria Santo Atanásio</a>
+      <a class="navbar-brand" href="index.html">Livraria Santo Atanásio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,7 +52,7 @@
     <nav class="navbar navbar-light navbar-secondary">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="../catalogo.html">Todos os produtos</a>
+          <a class="nav-link" href="catalogo.html">Todos os produtos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mais vendidos</a>
@@ -71,32 +71,35 @@
 
     <!-- Detalhes do livro -->
     <div class="container mt-5 book-details">
-      <div class="row">
+        <div class="row">
           <div class="col-md-4">
-              <img src="" alt="Capa do Livro" class="img-fluid main-image">
+            <img src="https://cdn.awsli.com.br/600x450/618/618258/produto/169051827/2717775a1d.jpg" alt="Capa do Livro" class="img-fluid main-image">
           </div>
           <div class="col-md-8">
-              <h2></h2>
-              <p class="price-instalments"></p>
-              <p class="final-price" ></p>
-              <p>ou <strong class="pix-price"></strong> via Pix</p>
-  
-              <div class="row">
-                  <input type="number" id="quantidade" value="1" min="1">
-                  <button class="btn btn-primary btn-buy" onclick="irParaCarrinho()"><i class="fas fa-lock"></i> Adicionar ao Carrinho</button>
-              </div>
+            <h2>História de Portugal: Das Origens até 1940 - João Ameal (CAPA DURA)</h2>
+            <p style="font-size: 20px; font-weight: bold; margin: 0; margin-top: 40px;">6x de 18,66</p>
+            <p style="color: rgb(112, 112, 112); font-size: 16px; margin: 0;"><s>R$ 224,00</s></p>
+            <p style="font-size: 30px; font-weight: bold; margin: 0;">R$ 112,00</p>
+            <p>ou <strong>R$ 106,40</strong> via Pix</p>
+
+            <div class="row">
+              <input type="number" id="quantidade" value="1" min="1">
+              <button class="btn btn-primary btn-buy" onclick="irParaCarrinho()"><i class="fas fa-lock"></i> Adicionar ao Carrinho</button>
+            </div>
+
           </div>
-      </div>
-      <div class="col-md-8">
+        </div>
+            <!-- Adicione isso abaixo do bloco de detalhes do livro -->
+        <div class="col-md-8">
           <div class="row mini-bloc">
               <div class="col-md-2 mini-img">
-                  <img src="" alt="Miniatura 1" class="img-thumbnail thumbnail miniatura1">
+                  <img src="https://cdn.awsli.com.br/600x450/618/618258/produto/169051827/2717775a1d.jpg" alt="Miniatura 1" class="img-thumbnail thumbnail">
               </div>
-              <div class="col-md-2 mini-img">
-                  <img src="" alt="Miniatura 2" class="img-thumbnail thumbnail miniatura2">
+              <div class="col-md-2">
+                  <img src="https://cdn.awsli.com.br/600x450/618/618258/produto/169051827/8164e56bf4.jpg" alt="Miniatura 2" class="img-thumbnail thumbnail">
               </div>
           </div>
-      </div>
+        </div>
     </div>
 
     <!-- Avaliações -->
@@ -248,9 +251,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-    <script src="../assets/js/index.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="produto-ATV.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/produto.js"></script>
     <!-- Script para iniciar o Carousel -->
   
 </body>

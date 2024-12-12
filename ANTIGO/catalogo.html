@@ -7,19 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>Livraria St. Atanásio</title>
 
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-  <link rel="stylesheet" href="../assets/css/index.css">
-  <link rel="stylesheet" href="../assets/css/carrinho.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/catalogo.css">
 
 </head>
 <body>
 
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="../index.html">Livraria Santo Atanásio</a>
+      <a class="navbar-brand" href="index.html">Livraria Santo Atanásio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +40,7 @@
         </ul>
         <ul class="navbar-nav ml-auto nav-icons">
           <li class="nav-item position-relative">
-            <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i> Minha cesta<span class="cart-quantity">0</span></a>
+            <a class="nav-link" href="carrinho.html"><i class="fas fa-shopping-basket"></i> Minha cesta<span class="cart-quantity">2</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-user login-icon"></i> Login</a>
@@ -52,7 +52,7 @@
     <nav class="navbar navbar-light navbar-secondary">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="catalogo-ATV.html">Todos os produtos</a>
+          <a class="nav-link" href="catalogo.html">Todos os produtos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mais vendidos</a>
@@ -70,33 +70,109 @@
     </nav>
 
 
-    <section id="cart-section" class="container-fluid">
-        <h2 class="mb-4">Carrinho</h2>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <ul id="cart-items" class="list-group mb-4">
-                </ul>
-            </div>
-            <div id="resumoCompra" class="col-md-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Resumo da Compra</h5>
-                        
-                        <div class="form-group">
-                            <label for="cupomInput">Cupom de Desconto:</label>
-                            <input type="text" class="form-control" id="cupomInput" placeholder="Digite seu cupom">
-                        </div>
-                        <p class="card-text">Subtotal: <span class="subtotal"></span></p>
-                        <p class="card-text">Frete: <span>Calculado no pagamento </span></p>
-                        <hr style="border-top: 2px solid #242424;">
-                        <p class="card-text font-weight-bold"></p>
-                        <button class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <div class="col-md-3">
+            <div class="sidebar border border-1 p-3">
+              <h2>Filtros</h2>
+              <form>
 
+                <!-- Checkbox -->
+                <label class="form-subtitle" for="form-check-input">Filtrar por categoria</label>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="filtroPromocao">
+                    <label class="form-check-label" for="filtroPromocao">
+                        Em promoção
+                    </label>
+                </div>
+    
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filtroHistoria">
+                    <label class="form-check-label" for="filtroHistoria">
+                        História
+                    </label>
+                </div>
+    
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filtroPsicologia">
+                    <label class="form-check-label" for="filtroPsicologia">
+                        Psicologia
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filtroDefesaDaFe">
+                    <label class="form-check-label" for="filtroDefesaDaFe">
+                        Defesa da Fé
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filtroFilosofia">
+                    <label class="form-check-label" for="filtroFilosofia">
+                        Filosofia
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filtroTeologia">
+                    <label class="form-check-label" for="filtroTeologia">
+                        Teologia
+                    </label>
+                </div>
+
+                <!-- Lista de intervalos de preços -->
+                
+                <div class="form-group">
+                    <label class="form-subtitle">Filtrar por Preço</label>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <a href="#">de R$ 1,00 até R$ 24,99 (1)</a>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#">de R$ 25,00 até R$ 49,99 (2)</a>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#">de R$ 50,00 até R$ 99,99 (5)</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">de R$ 100,00 até R$ 299,99 (3)</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">de R$ 300,00 até R$ 599,99 (1)</a>
+                        </li>
+                      </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <!-- cards -->
+
+          <div class="col-md-8">
+            
+            <!-- Barra de Seleção - Sort By -->
+            <div id="sortBy" class="position-relative">
+              <label for="sortSelect" class="form-label me-2">Ordenar por:</label>
+              <select id="sortSelect" class="form-select">
+                <option value="title">Ordem alfabética</option>
+                <option value="price">Maior preço</option>
+                <option value="price">Menor preço</option>
+                <option value="price">Maior desconto</option>
+              </select>
+            </div>
+
+            <!-- Seção de Cards de Produtos -->
+            <div class="card-columns" id="productCardsContainer">
+            </div>
+
+            <!-- Botão "Carregar Mais Produtos" -->
+            <div class="text-center mt-3">
+              <button id="loadMoreButton" class="btn btn-primary" onclick="loadMoreProducts()">Carregar Mais Produtos</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <!-- Newsletter -->
@@ -104,7 +180,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <h2 class="newsletter-title">
-            <img src="../assets/images/carta-newsletter(2).png" alt="Ícone" class="mr-2">
+            <img src="assets/images/carta-newsletter(2).png" alt="Ícone" class="mr-2">
             Assine nossa newsletter
           </h2>
           <form action="#" method="post" class="mt-3">
@@ -175,9 +251,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-    <script src="../assets/js/index.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="carrinho-ATV.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/catalogo.js"></script>
     <!-- Script para iniciar o Carousel -->
   
 </body>
