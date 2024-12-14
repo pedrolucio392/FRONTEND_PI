@@ -228,6 +228,9 @@ function chunkArray(array, size) {
   return result;
 }
 
+// "http://192.168.56.101:3001/book"
+// "http://localhost:3001/book"
+
 fetch("http://localhost:3001/book")
   .then((response) => {
     if (!response.ok) {

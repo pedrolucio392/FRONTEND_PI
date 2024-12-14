@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
     return params.get("id");
   }
 
+  // "http://192.168.56.101:3001/book"
+
   // Função para buscar o livro específico no JSON
   function fetchBookDetails(bookId) {
     fetch("http://localhost:3001/book/" + bookId) // Ajuste o caminho conforme necessário

@@ -113,8 +113,10 @@ function chunkArray(array, chunkSize) {
     return results;
 }
 
+// "http://192.168.56.101:3001/book"
+
 // Fazer a requisição à API do json-server
-fetch('http://localhost:3001/book')
+fetch("http://localhost:3001/book")
     .then(response => response.json())
     .then(data => {
         createProductCards(data);
