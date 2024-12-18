@@ -1,3 +1,5 @@
+
+
 // Função para atualizar a quantidade de itens no carrinho na navbar
 function updateCartQuantity() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
