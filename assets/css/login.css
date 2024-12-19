@@ -260,10 +260,10 @@ iframe {
   transition: all 0.4s;
 
   background: #6a7dfe;
-  background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  background: -o-linear-gradient(left, #21d4fd, #b721ff);
-  background: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  background: linear-gradient(left, #21d4fd, #b721ff);
+  background: -webkit-linear-gradient(left, #b16400e0, #242424);
+  background: -o-linear-gradient(left, #b16400e0, #242424);
+  background: -moz-linear-gradient(left, #b16400e0, #242424);
+  background: linear-gradient(left, #b16400e0, #242424);
 }
 
 .focus-input100::after {
@@ -327,18 +327,18 @@ iframe {
 
 .btn-show-pass:hover {
   color: #6a7dfe;
-  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  color: -o-linear-gradient(left, #21d4fd, #b721ff);
-  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  color: linear-gradient(left, #21d4fd, #b721ff);
+  color: -webkit-linear-gradient(left, #b16400e0, #242424);
+  color: -o-linear-gradient(left, #b16400e0, #242424);
+  color: -moz-linear-gradient(left, #b16400e0, #242424);
+  color: linear-gradient(left, #b16400e0, #242424);
 }
 
 .btn-show-pass.active {
   color: #6a7dfe;
-  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-  color: -o-linear-gradient(left, #21d4fd, #b721ff);
-  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-  color: linear-gradient(left, #21d4fd, #b721ff);
+  color: -webkit-linear-gradient(left, #b16400e0, #242424);
+  color: -o-linear-gradient(left, #b16400e0, #242424);
+  color: -moz-linear-gradient(left, #b16400e0, #242424);
+  color: linear-gradient(left, #b16400e0, #242424);
 }
 
 
@@ -371,11 +371,11 @@ iframe {
   z-index: -1;
   width: 300%;
   height: 100%;
-  background: #a64bf4;
-  background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: -o-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: -moz-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  background: #b3782be0;
+  background: -webkit-linear-gradient(right, #b16400e0 , #242424, #b16400e0 , #242424);
+  background: -o-linear-gradient(right, #b16400e0 , #242424, #b16400e0 , #242424);
+  background: -moz-linear-gradient(right, #b16400e0 , #242424, #b16400e0 , #242424);
+  background: linear-gradient(right, #b16400e0 , #242424, #b16400e0 , #242424);
   top: 0;
   left: -100%;
 
@@ -384,6 +384,15 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
+/* ant */
+
+/* #21d4fd azul*/
+/* #b721ff violeta */
+
+/* novo */
+
+/* #b16400e0 dourado*/
+/* #242424 preto*/
 
 .login100-form-btn {
   font-family: Poppins-Medium;
