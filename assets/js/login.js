@@ -108,11 +108,20 @@ document
             const data = await response.json();
 
             if (response.ok) {
+                const token = data.token;
                 // Armazenar o token no localStorage
                 localStorage.setItem("token", data.token);
 
-                // Redirecionar para index.html
-                window.location.href = "index.html";
+                // Decodificar o token para extrair o role/isAdmin
+                const decodedToken = JSON.parse(atob(token.split(".")[1])); // Decodificando o payload do JWT
+
+                if (decodedToken.isAdmin) {
+                    // Redirecionar para pedidos.html se for administrador
+                    window.location.href = "pedidos.html";
+                } else {
+                    // Redirecionar para index.html para outros usuários
+                    window.location.href = "index.html";
+                }
             } else {
                 document.getElementById("message").textContent =
                     data.message || "Erro ao fazer login";
